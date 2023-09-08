@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"gesture\startup_stm32f103xb.o"
+"gesture\dev_config.o"
+"gesture\main.o"
+"gesture\gpio.o"
+"gesture\i2c.o"
+"gesture\usart.o"
+"gesture\stm32f1xx_it.o"
+"gesture\stm32f1xx_hal_msp.o"
+"gesture\stm32f1xx_hal_gpio_ex.o"
+"gesture\stm32f1xx_hal_i2c.o"
+"gesture\stm32f1xx_hal_tim.o"
+"gesture\stm32f1xx_hal_tim_ex.o"
+"gesture\stm32f1xx_hal_uart.o"
+"gesture\stm32f1xx_hal.o"
+"gesture\stm32f1xx_hal_rcc.o"
+"gesture\stm32f1xx_hal_rcc_ex.o"
+"gesture\stm32f1xx_hal_gpio.o"
+"gesture\stm32f1xx_hal_dma.o"
+"gesture\stm32f1xx_hal_cortex.o"
+"gesture\stm32f1xx_hal_pwr.o"
+"gesture\stm32f1xx_hal_flash.o"
+"gesture\stm32f1xx_hal_flash_ex.o"
+"gesture\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Gesture\Gesture.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Gesture.map" -o Gesture\Gesture.axf
